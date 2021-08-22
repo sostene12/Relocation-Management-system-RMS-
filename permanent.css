@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+/* content */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px 30px;
+  border-radius: 5px;
+  height: auto;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+  bottom: 100px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 54%;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.input {
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+}
+.container form .userdetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  font-weight: 500;
+}
+form .userdetails .inputbox {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.userdetails .inputbox .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.textarea {
+  border: 2px solid rgba(0, 0, 0, 0.411);
+  border-radius: 8px;
+  background: none;
+  width:100%
+}
+.userdetails .inputbox input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  /* border-radius: 5px; */
+  border: none;
+  /* border: 1px solid #ccc; */
+  border-bottom: 1px solid black;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.userdetails .inputbox .red {
+  color: red;
+  font-size: 12px;
+}
+.userdetails .inputbox input:focus,
+.userdetails .inputbox input:valid {
+  border-color: #000000;
+}
+/* gender */
+form .genderdetails .gendertitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .genderdetails .category {
+  margin: 14px 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.genderdetails .category label {
+  display: flex;
+  align-items: center;
+}
+.genderdetails .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot1:checked ~ .category label .one,
+#dot2:checked ~ .category label .two {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+/* marital status */
+
+form .maritaldetails .maritaltitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .maritaldetails .class {
+  margin: 14px 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.maritaldetails .class label {
+  display: flex;
+  align-items: center;
+}
+.maritaldetails .class .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot3:checked ~ .class label .three,
+#dot4:checked ~ .class label .four,
+#dot5:checked ~ .class label .five {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+  position: relative;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+.red{
+  color:red;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: center;
+  top: 0px;
+}
+.residence {
+  font-size: 20px;
+  font-weight: 500;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.file {
+  margin-top: 30px;
+}
+@media screen {
+}
+
+
+/* information */
+.info{
+  color:#fff;
+  top: -200px;
+  width: 100%;
+  margin-top: -950px;
+  margin-left: 40px;
+
+}
+details{
+  color:#fff;
+  top: -200px;
+}
+h3{
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+summary{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+img{
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  top: 0;
+  padding-bottom: 5px;
+  width: 50px;
+  height: 40px;
+}
