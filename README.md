@@ -1,3 +1,8 @@
+#This project aims to updated the address of citizens when they move every time
+for example like Tenants , they mostly tend to move from one address to another , so for the good provision of services to the citizen
+it is good to track his/her address so that the local leaders can provide the good services 
+
+
 # Relocation-Management-system-RMS-
 the credentials for admin(username:admin,password:12345)
 the credentials for user(username:sostene,password:sostene)
